@@ -1,15 +1,13 @@
 package com.zoo;
 
 public class Lion {
-    public static final String ORANGE = "orange";
-    public static final String RED = "red";
-    public static final String YELLOW = "yellow";
+    public enum Colors {RED, ORANGE, YELLOW};
 
     public float height;
     public float weight;
-    public String color;
+    public Colors color;
 
-    public Lion(float height, float weight, String color) {
+    public Lion(float height, float weight, Colors color) {
         this.height = height;
         this.weight = weight;
         this.color = color;
